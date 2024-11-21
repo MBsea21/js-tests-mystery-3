@@ -10,12 +10,12 @@ export const mystery3 = (string1, string2) => {
     }
     i++;
   }
-  while (i < string1.length & string2.length)
+  while (i < string1.length && i < string2.length);
 
   if (string1.length > i) {
     difCount += (string1.length - i);
   } else if (string2.length > i) {
-    difCount += (string2.length -i);
+    difCount += (string2.length - i);
   }
 
   return difCount;
